@@ -82,6 +82,7 @@ public class Myserv extends HttpServlet {
       session.setAttribute("prenom",p);
       session.setAttribute("login",log);
       session.setAttribute("pass",pass);
+      session.setAttribute("etat","inscrit");
       response.sendRedirect("index.jsp");
       //response.getWriter().print("bienvenu "+n+" "+p);
     }

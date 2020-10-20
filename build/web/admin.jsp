@@ -8,6 +8,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <%
+        if(!session.getAttribute("grade").toString().equals("admin"))
+        response.sendRedirect("erreur.jsp");
+        
+        %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
